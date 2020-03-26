@@ -40,43 +40,32 @@
                 <div class="clearfix"></div>
              </div>
         </header>
-        <div id="slider" class="slider-big">
-            <h1>Bienvenido al curso de React con Cesar Bermudez</h1>
-            <a href="#" class="btn-white">Ir al blog</a>
-        </div>
         <div class="center">
             <section id="content">
-                <h2 class="subheader">últimos artículos</h2>
-               <div id="articles">
-                    <!--Listado articulos-->
-                <article class="article-item" id="article-template">
-                    <div class="image-wrap">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSsCnqcLGiCc0jrzrpappBMGi_iPUaAf34UW2to-XXMmKMu1Uz" alt="Paisaje">
+               <h1 class="subheader">Formulario</h1>
+               <form class="mid-form">
+                   <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre">
+                   </div>
+                   <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos">
                     </div>
-                    <h2>Artículo de prueba</h2>
-                        <span class="date">
-                            Hace 5 minutos
-                        </span>
-                        <a href="#">Leer más</a>
-                        <div class="clearfix"></div>
-                </article>
-                <!--AÑADIR ARTICULOS VIA JS-->
-               </div>
+                    <div class="form-group">
+                        <label for="bio">Biografia</label>
+                        <textarea name="bio"></textarea>
+                    </div>
+                    <div class="form-group radiobuttons">
+                        <input type="radio" value="mujer" />Mujer
+                        <input type="radio" value="hombre" />Hombre
+                        <input type="radio" value="otro" />Otro
+                    </div>
+                    <div class="clearfix"></div>
+                    <input type="button" value="Enviar" class="btn btn-success"/>
+               </form>
             </section>
-            <script>
-                window.addEventListener("load",function(event){
-                    var template= document.getElementById("article-template");
-                    var articles= document.getElementById("articles");
-                    for(var i =0; i<=5; i++){
-                        var clonado = template.cloneNode(true)
-                        clonado.removeAttribute("id")
-                        var h2= clonado.getElementsByTagName("h2")[0]
-                        h2.innerHTML = h2.textContent +' '+i
-                        articles.appendChild(clonado);
-                    }
-                })
-               
-            </script>
+           
             <aside id="sidebar">
                 <div id="nav-blog" class="sidebar-item">
                     <h3>Puedes hacer esto</h3>
@@ -85,7 +74,7 @@
                 <div id="search" class="sidebar-item">
                     <h3>Buscador</h3>
                     <p>Encuentra el artículo que buscas</p>
-                    <form action="">
+                    <form action="" class="mid-form">
                         <input type="text" name="search" />
                         <input type="submit" name="submit" value="Buscar" class="btn" />
                     </form>

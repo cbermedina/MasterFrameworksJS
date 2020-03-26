@@ -174,16 +174,41 @@ body {
 .btn-success:hover {
     background: black;
 }
-input[type="text"] {
+.mid-form {
+    width: 50%;
+    margin: 0px auto;
+}
+.mid-form label {
+    float: left;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+input[type="text"],textarea {
     width: 100%;
-    height: 30px;
+    min-height: 30px;
     border: 1px solid #ccc;
     padding: 5px;
     margin-bottom: 5px;
     transition: 300ms all;
 }
-input[type="text"]:focus{
+input[type="text"]:focus, textarea:focus{
     box-shadow: 0px 0px 2px #ccc inset;
+}
+textarea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    min-width: 100%;
+    height: 150px;
+    min-height: 150px;
+}
+.radiobuttons{
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 10px;
 }
 #footer {
     background: #f7f7f7f7;
@@ -203,9 +228,55 @@ input[type="text"]:focus{
     padding-top: 20px;
     text-align: left;
 }
-/* .article-item .image-wrap {
+.article-item .image-wrap {
     width: 130px;
     height: 130px;
     overflow: hidden;
     float: left;
-} */
+    margin-right: 15px;
+    border: 1px solid #ccc;
+}
+.article-item .image-wrap img {
+    height: 100%;
+    text-align: center;
+}
+.article-item h2 {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 7px;
+}
+.article-item .date {
+    display: block;
+    width: 100%;
+    color:rgb(88,88,88);
+}
+.article-item a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.article-item a:hover {
+    text-decoration: underline;
+}
+.subheader {
+    font-size: 38px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.article-detail .image-wrap {
+    float: none;
+    width: 100%;
+    height: 300px;
+}
+.article-detail .image-wrap img {
+    width: 100%;
+    height: auto;
+}
+.article-detail .subheader{
+    margin-bottom: 0px;
+    margin-top: 10px; 
+    border: none;   
+}
