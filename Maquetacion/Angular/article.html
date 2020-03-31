@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+
+        <title>Maquetación masters en Frameworks Javascript</title>
+        <!--Hoja de estilos-->
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css" >
+    </head>
+    <body>
+        <header id="header">
+            <div class="center">
+                <!--Logo-->
+                <div id="logo">
+                    <img src="assets/images/Angular.svg" alt="Logotipo" class="app-logo"/>
+                    <span id="brand">
+                        <strong>Curso</strong>Angular
+                    </span>
+                </div>
+                <!--Menu-->
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="formulario.html">Formulario</a>
+                        </li>
+                        <li>
+                            <a href="#">Página 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Página 2</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Limpiar flotados-->
+                <div class="clearfix"></div>
+             </div>
+        </header>
+        <div class="center">
+            <section id="content">
+               
+                    <!--Listado articulos-->
+                <article class="article-item article-detail" >
+                    <div class="image-wrap">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSsCnqcLGiCc0jrzrpappBMGi_iPUaAf34UW2to-XXMmKMu1Uz" alt="Paisaje">
+                    </div>
+                    <h1 class="subheader">Artículo de prueba</h2>
+                        <span class="date">
+                            Hace 5 minutos
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum nunc in placerat dapibus. Suspendisse vel leo metus. Pellentesque maximus purus faucibus massa aliquet fermentum. Pellentesque dolor sapien, pretium non malesuada et, dignissim vitae magna. Donec porttitor maximus mi at vestibulum. Donec pulvinar rutrum volutpat. Sed in metus fermentum, suscipit nisi a, finibus enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus vehicula, risus eget sollicitudin laoreet, neque leo vulputate ipsum, eget rutrum libero mauris sit amet magna. Nunc ut eros augue. Integer ligula diam, ornare eget dolor vel, suscipit mollis orci.
+                        </p>
+                        <p>
+                            Nullam sagittis ligula in rhoncus tristique. In euismod, odio nec eleifend lacinia, nibh nisi suscipit odio, vitae dictum risus ipsum eu lorem. Aliquam et sapien quam. Vestibulum at consequat leo. Mauris nec hendrerit dui, vel fringilla ex. Aliquam gravida purus quis ligula sodales tristique. Curabitur molestie ac urna sed fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas sollicitudin nisi maximus eros elementum interdum. Sed viverra justo sem, eu dignissim nisi cursus nec. Proin placerat odio eu fermentum posuere. Curabitur porttitor pellentesque nunc, sed sollicitudin justo facilisis sed. Aliquam tincidunt, est eget rhoncus auctor, urna odio dapibus sem, at lobortis ligula nisl ac enim. Sed maximus ligula magna.
+                        </p>
+                        <p>
+                            Etiam imperdiet felis mauris, sit amet pellentesque arcu porta in. Phasellus sed mollis nibh, at ullamcorper mi. Quisque bibendum pharetra sollicitudin. Quisque ut dolor non nisi efficitur pharetra. Vestibulum egestas facilisis tellus eget mollis. Donec vel lacus erat. Vivamus sed elit et lectus pharetra condimentum et vitae quam. Ut placerat faucibus venenatis.
+                        </p>
+                        <p>
+                            Morbi semper eleifend sapien sit amet tempus. Etiam dictum id lacus et luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut consequat velit lacus. Fusce mollis dui libero, quis sagittis lacus condimentum at. Nam eget lacus mi. Nullam faucibus ac ante eget luctus. Maecenas fringilla nec velit in tempus. Suspendisse libero leo, efficitur vel elementum et, varius vel nisl. Morbi aliquam sem a metus aliquam convallis. Donec a libero ut sapien interdum eleifend. Aliquam vel efficitur dui. Aliquam a turpis eu diam rhoncus tempor.
+                        </p>
+                        <p>
+                            Ut gravida mauris a fermentum feugiat. Ut non lacus bibendum, porta mauris et, aliquet nisl. In in nisl euismod, sagittis quam non, rutrum tellus. Curabitur volutpat neque et felis finibus rutrum. Morbi rutrum, purus sed iaculis facilisis, quam sapien viverra purus, eget consequat libero orci non ligula. Fusce feugiat, lectus in tristique scelerisque, lectus nibh malesuada risus, non sagittis libero orci nec nulla. Phasellus nec diam vel mi vulputate congue.
+                        </p>
+                        <div class="clearfix"></div>
+                </article>
+                <!--AÑADIR ARTICULOS VIA JS-->
+             
+            </section>
+           
+            <aside id="sidebar">
+                <div id="nav-blog" class="sidebar-item">
+                    <h3>Puedes hacer esto</h3>
+                    <a href="#" class="btn btn-success">Crear artículo</a>
+                </div>
+                <div id="search" class="sidebar-item">
+                    <h3>Buscador</h3>
+                    <p>Encuentra el artículo que buscas</p>
+                    <form action="">
+                        <input type="text" name="search" />
+                        <input type="submit" name="submit" value="Buscar" class="btn" />
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </div>
+        <footer id="footer">
+            <div class="center">
+                &copy; Master en frameworks JavaScript de Cesar Bermudez 
+            </div>
+        </footer>
+    </body>
+</html>
