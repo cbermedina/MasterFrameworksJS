@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+        <title>Prueba</title>
+        <!--Hoja de estilos-->
+    </head>
+    <style>
+        .clearfix {
+            clear: both;
+            float: none;
+        }
+
+        .qr-item {
+            background: #f7f7f7;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .image-wrap img{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            margin-right: 15px;
+            margin-top: 10px;
+        }
+        #article{
+            width: 25%;
+            float: left;
+        }
+        .container{
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            /*Fuentes*/
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: antialiased;
+        }
+        #article .qr-item .container-article {
+            text-align: left;
+            margin: 3px;
+        }
+        #article .qr-item .footer {
+            background-color: #2e73c1;
+            border-radius: 0px 0px 20px 20px;
+            height: 20px;
+            margin-top: 10px;
+        }
+        #article .qr-item .header {
+            background-color: #2e73c1;
+            border-radius: 20px 20px 0px 0px;
+            height: 20px;
+            margin-top: 10px;
+        }
+        
+        .container-article p{
+            margin: 1px 1px 1px 1px;
+        }
+    </style>
+<div class="container">
+            <div id="article">
+                   
+                <div class="qr-item">
+                    <div class="header">
+                    </div>
+                    
+                     <img src="[QR]" alt="QR">
+                        
+                    <div class="container-article">
+                        <p>
+                            Código de Producto:<labe id="codigo-productoId">[codigoProductoId]</labe>
+                        </p>
+                        <p>
+                            Producto Destino:<labe id="producto-destinoId">[productoDestinoId]</labe>
+                        </p>
+                        <p>
+                            Nombre del beneficiario:<labe id="beneficiarioId">[beneficiarioId]</labe>
+                        </p>
+                        <p>
+                            Entidad:<labe id="entidadId">[entidadId]</labe>
+                        </p>
+                        <p>
+                            Descripción:<labe id="descripcionId">[descripcionId]</labe>
+                        </p>
+                        <p>
+                            Valor:<labe id="valorId">[valorId]</labe>
+                        </p>
+                    </div>
+                    <div class="footer">
+                    </div>
+                </div>
+            </div>
+            <a href="graph.facebook.com/17841400008460056/media?image_url=https//www.example.com/images/bronz-fonz.jpg&caption=#BronzFonz" title="Share on Instagram">Click to Share on Instagramk</a>
+        </div>
+        <script>
+            function open(){
+                var con = document.getElementById('content'), 
+                 xhr = new XMLHttpRequest();
+                 xhr.onreadystatechange = function (e) { 
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    con.innerHTML = xhr.responseText;
+                }
+            }
+
+            xhr.open("GET", "https://www.instagram.com/direct/new/", true);
+            xhr.setRequestHeader('Content-type', 'text/html');
+            xhr.send();
+                document.getElementById('id01').style.display='block';
+            }
+        </script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <a title="Share on whatsapp" href="whatsapp://send?text=The text to share!" onclick="popupwindowAtCenter(this.href,'Share on whatsapp',600,600);return false;" >  
+            whatsapp</a></td> 
+            <a href="https://www.instagram.com/direct/new/" onclick="javascript:window.open(this.href,'sharer','toolbar=0,status=0,width=548,height=400');return false;" rel="nofollow"> <img alt="Linkedin" src="@Url.Content(" ~/Images/linkdin.png ")" id="imgln">
+               <a title="Share on Facebook" href="https://www.facebook.com/sharer.php?i=p" onclick="popupwindowAtCenter(this.href,'Share on Facebook',600,600);return false;" >  
+            <img src="http://stage.nursingcenter.com/app_themes/share_icons/facebook.png" alt="facebook" /></a> 
+            </body>
+</html>
